@@ -25,7 +25,7 @@ variable "subnet_ids" {
 variable "security_group_ids" {
   description = "List of security group IDs"
   type        = list(string)
-  default     = ["sg-0123544b2570bf42b", "sg-ALL-TRAFFIC"] # Replace with actual security group IDs
+  default     = ["sg-0123544b2570bf42b"] # Replace with actual security group IDs
 }
 
 variable "node_group_name" {
