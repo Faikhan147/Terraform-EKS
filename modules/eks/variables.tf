@@ -19,7 +19,7 @@ variable "kms_key_arn" {
 variable "subnet_ids" {
   description = "List of subnet IDs for the cluster"
   type        = list(string)
-  default     = ["subnet-xxxxxxxx", "subnet-yyyyyyyy"] # Replace with actual subnet IDs
+  default     = ["subnet-0d122a84d3edb9ba1", "subnet-05e6fb6a379ad46b5", "subnet-0473aa947a04c0fa3"] # Replace with actual subnet IDs
 }
 
 variable "security_group_ids" {
@@ -49,19 +49,19 @@ variable "instance_type" {
 variable "desired_size" {
   description = "Desired node group size"
   type        = number
-  default     = 5
+  default     = 2
 }
 
 variable "min_size" {
   description = "Minimum node group size"
   type        = number
-  default     = 5
+  default     = 2
 }
 
 variable "max_size" {
   description = "Maximum node group size"
   type        = number
-  default     = 5
+  default     = 2
 }
 
 variable "ec2_key_pair" {
