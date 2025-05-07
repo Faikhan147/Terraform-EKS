@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "📦 Switching to prod environment directory..."
+echo "📦 Switching to qa environment directory..."
 cd Terraform-EKS/environment/qa
 
-echo "📦 Switching to prod workspace..."
+echo "📦 Switching to qa workspace..."
 terraform workspace select qa
 
 echo "🛠️ Initializing Terraform..."
