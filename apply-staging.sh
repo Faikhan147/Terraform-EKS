@@ -1,10 +1,10 @@
 
 #!/bin/bash
 
-echo "📦 Switching to prod environment directory..."
+echo "📦 Switching to staging environment directory..."
 cd Terraform-EKS/environment/staging
 
-echo "📦 Switching to prod workspace..."
+echo "📦 Switching to staging workspace..."
 terraform workspace select staging || terraform workspace new staging
 
 echo "🔍 Initializing Terraform..."
@@ -20,18 +20,18 @@ terraform fmt -recursive
 echo "🔢 Listing available workspaces..."
 terraform workspace list
 
-echo "📄 Creating plan for prod..."
+echo "📄 Creating plan for staging..."
 terraform plan -var-file="staging.tfvars" -out=tfplan.out
 
 echo "⚠️ Review the plan output before applying:"
 terraform show tfplan.out
 
 # Fixed the read command syntax
-echo "🚀 Do you want to apply this plan to production? (yes/no)"
+echo "🚀 Do you want to apply this plan to staging? (yes/no)"
 read choice
 
 if [ "$choice" == "yes" ]; then
-    echo "✅ Applying changes to prod..."
+    echo "✅ Applying changes to staging..."
     terraform apply "tfplan.out"
     
     echo "📊 Showing the current state after applying the plan..."
