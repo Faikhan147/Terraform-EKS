@@ -25,7 +25,7 @@ terraform plan -var-file="qa.tfvars" -out=tfplan.out
 echo "⚠️ Review the plan output before applying:"
 terraform show tfplan.out
 
-echo "🚀 Do you want to apply this plan to production? (yes/no)"
+echo "🚀 Do you want to apply this plan to qa? (yes/no)"
 read choice
 
 if [ "$choice" == "yes" ]; then
