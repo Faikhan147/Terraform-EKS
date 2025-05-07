@@ -7,7 +7,7 @@ echo "📦 Switching to qa workspace..."
 terraform workspace select qa
 
 echo "🛠️ Initializing Terraform..."
-terraform init
+terraform init -reconfigure
 
 echo "📝 Formatting Terraform files..."
 terraform fmt -recursive
