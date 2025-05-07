@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "📦 Switching to prod environment directory..."
+echo "📦 Switching to qa environment directory..."
 cd Terraform-EKS/environment/qa
 
-echo "📦 Switching to prod workspace..."
+echo "📦 Switching to qa workspace..."
 terraform workspace select qa || terraform workspace new qa
 
 echo "🔍 Initializing Terraform..."
@@ -19,18 +19,17 @@ terraform fmt -recursive
 echo "🔢 Listing available workspaces..."
 terraform workspace list
 
-echo "📄 Creating plan for prod..."
+echo "📄 Creating plan for qa..."
 terraform plan -var-file="qa.tfvars" -out=tfplan.out
 
 echo "⚠️ Review the plan output before applying:"
 terraform show tfplan.out
 
-# Fixed the read command syntax
 echo "🚀 Do you want to apply this plan to production? (yes/no)"
 read choice
 
 if [ "$choice" == "yes" ]; then
-    echo "✅ Applying changes to prod..."
+    echo "✅ Applying changes to qa..."
     terraform apply "tfplan.out"
     
     echo "📊 Showing the current state after applying the plan..."
