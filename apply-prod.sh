@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "📦 Switching to prod environment directory..."
-cd Terraform-EKS/environment/prod
+cd environment/prod
 
 echo "📦 Switching to prod workspace..."
 terraform workspace select prod || terraform workspace new prod
