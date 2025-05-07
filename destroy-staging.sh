@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "📦 Switching to staging environment directory..."
-cd Terraform-EKS/environment/staging
+cd environment/staging
 
 echo "📦 Switching to staging workspace..."
 terraform workspace select staging
