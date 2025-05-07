@@ -7,7 +7,7 @@ echo "📦 Switching to prod workspace..."
 terraform workspace select prod || terraform workspace new prod
 
 echo "🔍 Initializing Terraform..."
-terraform init
+terraform init -reconfigure
 
 echo "✅ Validating configuration..."
 terraform validate
