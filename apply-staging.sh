@@ -16,7 +16,6 @@ terraform validate
 echo "📝 Formatting Terraform files..."
 terraform fmt -recursive
 
-# Display workspace list
 echo "🔢 Listing available workspaces..."
 terraform workspace list
 
@@ -26,7 +25,6 @@ terraform plan -var-file="staging.tfvars" -out=tfplan.out
 echo "⚠️ Review the plan output before applying:"
 terraform show tfplan.out
 
-# Fixed the read command syntax
 echo "🚀 Do you want to apply this plan to staging? (yes/no)"
 read choice
 
