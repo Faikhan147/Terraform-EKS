@@ -7,7 +7,7 @@ echo "📦 Switching to qa workspace..."
 terraform workspace select qa || terraform workspace new qa
 
 echo "🔍 Initializing Terraform..."
-terraform init
+terraform init -reconfigure
 
 echo "✅ Validating configuration..."
 terraform validate
