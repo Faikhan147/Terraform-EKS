@@ -21,7 +21,9 @@ terraform plan -var-file="prod.tfvars" -out=tfplan.out
 echo "⚠️ Review the plan output before applying:"
 terraform show tfplan.out
 
-# Fixed the read command syntax
+echo "🔢 Listing available workspaces..."
+terraform workspace list
+
 echo "🚀 Do you want to apply this plan to production? (yes/no)"
 read choice
 
