@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-backend-faisalkhan"
+    bucket         = "terraform-backend-faisal-khan"
     key            = "eks/staging/terraform.tfstate"
     region         = "ap-south-1"
     encrypt        = true
