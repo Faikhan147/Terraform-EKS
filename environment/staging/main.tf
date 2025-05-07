@@ -1,5 +1,5 @@
 module "eks" {
-  source              = "../../../modules/eks"
+  source              = "../../modules/eks"
 
   cluster_name        = var.cluster_name
   cluster_role_arn    = var.cluster_role_arn
