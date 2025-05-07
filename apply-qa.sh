@@ -15,6 +15,10 @@ terraform validate
 echo "📝 Formatting Terraform files..."
 terraform fmt -recursive
 
+# Display workspace list
+echo "🔢 Listing available workspaces..."
+terraform workspace list
+
 echo "📄 Creating plan for prod..."
 terraform plan -var-file="qa.tfvars" -out=tfplan.out
 
@@ -28,6 +32,9 @@ read choice
 if [ "$choice" == "yes" ]; then
     echo "✅ Applying changes to prod..."
     terraform apply "tfplan.out"
+    
+    echo "📊 Showing the current state after applying the plan..."
+    terraform show
 else
     echo "❌ Deployment cancelled."
 fi
