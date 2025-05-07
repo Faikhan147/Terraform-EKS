@@ -19,7 +19,7 @@ echo "🛑 WARNING: This will destroy all qa resources!"
 read -p "Are you absolutely sure? Type 'destroy' to continue: " confirm
 
 if [ "$confirm" == "destroy" ]; then
-    echo "🔥 Destroying prod infrastructure..."
+    echo "🔥 Destroying qa infrastructure..."
     terraform destroy -var-file="qa.tfvars"
 
     echo "📊 Showing the current state after destroy..."
