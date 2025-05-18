@@ -24,6 +24,7 @@ module "eks" {
   subnet_ids          = var.subnet_ids
   security_group_ids  = var.security_group_ids
   node_group_name     = var.node_group_name
+  node_role_arn     = var.node_role_arn
   instance_type       = var.instance_type
   desired_size        = var.desired_size
   min_size            = var.min_size
