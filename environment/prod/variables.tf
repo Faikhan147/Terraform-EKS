@@ -1,5 +1,8 @@
 variable "cluster_name" {}
-variable "cluster_role_arn" {}
+variable "eks_cluster_role_name" {}
+variable "AmazonEKSClusterPolicy_arn" {}
+variable "AmazonEKSServicePolicy_arn" {}
+variable "CloudWatchAgentServerPolicy_arn" {}
 variable "kms_key_arn" {}
 variable "subnet_ids" {
   type = list(string)
