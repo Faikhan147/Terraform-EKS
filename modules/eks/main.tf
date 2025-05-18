@@ -28,21 +28,15 @@ resource "aws_eks_node_group" "this" {
   node_group_name = var.node_group_name
   node_role_arn   = var.node_role_arn
   subnet_ids      = var.subnet_ids
+
+  instance_types       = [var.instance_type]
+  disk_size            = 100
   iam_instance_profile = aws_iam_instance_profile.eks_nodes_ssm_profile.name
 
   scaling_config {
     desired_size = var.desired_size
     min_size     = var.min_size
     max_size     = var.max_size
-  }
-
-  instance_types = [var.instance_type]
-  disk_size      = 100
-
-  remote_access {
-    eks_nodes_ssm_role_name = var.eks_nodes_ssm_role_name
-    eks_nodes_ssm_role_name = var.eks_nodes_ssm_role_name
-    AmazonS3FullAccess_arn = var.AmazonS3FullAccess_arn
   }
 
   tags = {
