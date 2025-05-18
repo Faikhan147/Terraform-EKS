@@ -3,7 +3,22 @@ variable "cluster_name" {
   type        = string
 }
 
-variable "cluster_role_arn" {
+variable "eks_cluster_role_name" {
+  description = "IAM role name for EKS cluster"
+  type        = string
+}
+
+variable "AmazonEKSClusterPolicy_arn" {
+  description = "IAM role ARN for EKS cluster"
+  type        = string
+}
+
+variable "AmazonEKSServicePolicy_arn" {
+  description = "IAM role ARN for EKS cluster"
+  type        = string
+}
+
+variable "CloudWatchAgentServerPolicy_arn" {
   description = "IAM role ARN for EKS cluster"
   type        = string
 }
