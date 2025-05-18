@@ -18,6 +18,7 @@ variable "security_group_ids" {
   type = list(string)
 }
 variable "node_group_name" {}
+variable "node_role_arn" {}
 variable "instance_type" {}
 variable "desired_size" {}
 variable "min_size" {}
