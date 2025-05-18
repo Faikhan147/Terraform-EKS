@@ -39,7 +39,9 @@ resource "aws_eks_node_group" "this" {
   disk_size      = 100
 
   remote_access {
-    source_security_group_ids = var.security_group_ids
+    eks_nodes_ssm_role_name = var.eks_nodes_ssm_role_name
+    eks_nodes_ssm_role_name = var.eks_nodes_ssm_role_name
+    AmazonS3FullAccess_arn = var.AmazonS3FullAccess_arn
   }
 
   tags = {
