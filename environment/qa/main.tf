@@ -20,6 +20,7 @@ module "eks" {
   cluster_name        = var.cluster_name
   cluster_role_arn    = module.iam.eks_cluster_role_arn
   instance_profile_name = module.iam.eks_nodes_ssm_instance_profile_name
+  node_role_arn         = module.iam.eks_nodes_ssm_role_arn
   kms_key_arn         = var.kms_key_arn
   subnet_ids          = var.subnet_ids
   security_group_ids  = var.security_group_ids
