@@ -1,5 +1,8 @@
 cluster_name        = "faisal-prod-cluster"
-cluster_role_arn    = "arn:aws:iam::195275659054:role/AmazonEKSAutoClusterRole"
+eks_cluster_role_name  = "eks-prod-cluster"
+AmazonEKSClusterPolicy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
+AmazonEKSServicePolicy_arn = "arn:aws:iam::aws:policy/AmazonEKSServicePolicy"
+CloudWatchAgentServerPolicy_arn = "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
 kms_key_arn         = "arn:aws:kms:ap-south-1:195275659054:key/cf1e36fb-e5c5-4d3d-bfd9-4eda4041cb55"
 subnet_ids          = ["subnet-0d122a84d3edb9ba1", "subnet-0473aa947a04c0fa3", "subnet-05e6fb6a379ad46b5"]
 security_group_ids  = ["sg-0123544b2570bf42b"]
