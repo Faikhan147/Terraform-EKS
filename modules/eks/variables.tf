@@ -53,11 +53,6 @@ variable "max_size" {
   type        = number
 }
 
-variable "ec2_key_pair" {
-  description = "Name of the EC2 key pair"
-  type        = string
-}
-
 variable "eks_nodes_ssm_role_name" {
   description = "IAM Role name for EKS-Nodes access"
   type        = string
