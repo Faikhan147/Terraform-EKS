@@ -15,14 +15,14 @@ resource "aws_iam_role" "eks_nodes_ssm_role" {
   })
 }
 
-# Default policy AmazonSSMManagedInstanceCore Role attached to EKS-Nodes Role
+# Default policy AmazonSSMManagedInstanceCore attached to EKS-Nodes Role
 
 resource "aws_iam_role_policy_attachment" "attach_ssm_access" {
   role       = aws_iam_role.eks_nodes_ssm_role.name
   policy_arn = var.AmazonSSMManagedInstanceCore_arn
 }
 
-# Instance profile creation for  jenkins-s3-ssm-access attach to Jenkins EC2
+# Instance profile creation for EKS-Nodes Role attach to EKS-Nodes EC2
 
 resource "aws_iam_instance_profile" "eks_nodes_ssm_profile" {
   name = var.eks_nodes_ssm_role_name
