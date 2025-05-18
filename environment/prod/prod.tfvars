@@ -9,4 +9,5 @@ instance_type       = "t3.medium"
 desired_size        = 2
 min_size            = 2
 max_size            = 2
-ec2_key_pair        = "WIN-KEY-PEM"
+eks_nodes_ssm_role_name  = "eks-nodes-ssm-access"
+AmazonS3FullAccess_arn        = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
