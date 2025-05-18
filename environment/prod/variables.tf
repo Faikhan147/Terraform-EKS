@@ -14,4 +14,7 @@ variable "desired_size" {}
 variable "min_size" {}
 variable "max_size" {}
 variable "eks_nodes_ssm_role_name" {}
-variable "AmazonS3FullAccess_arn" {}
+variable "AmazonSSMManagedInstanceCore_arn" {}
+variable "AmazonEKSWorkerNodePolicy_arn" {}
+variable "AmazonEKS_CNI_Policy_arn" {}
+variable "AmazonEC2ContainerRegistryReadOnly_arn" {}
