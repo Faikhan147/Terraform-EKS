@@ -3,31 +3,6 @@ variable "cluster_name" {
   type        = string
 }
 
-variable "eks_cluster_role_name" {
-  description = "IAM role name for EKS cluster"
-  type        = string
-}
-
-variable "AmazonEKSClusterPolicy_arn" {
-  description = "IAM role ARN for EKS cluster"
-  type        = string
-}
-
-variable "AmazonEKSServicePolicy_arn" {
-  description = "IAM role ARN for EKS cluster"
-  type        = string
-}
-
-variable "CloudWatchAgentServerPolicy_arn" {
-  description = "IAM role ARN for EKS cluster"
-  type        = string
-}
-
-variable "cluster_role_arn" {
-  description = "IAM Role ARN for EKS cluster"
-  type        = string
-}
-
 variable "kms_key_arn" {
   description = "KMS Key ARN for secrets encryption"
   type        = string
@@ -66,14 +41,4 @@ variable "min_size" {
 variable "max_size" {
   description = "Maximum node group size"
   type        = number
-}
-
-variable "eks_nodes_ssm_role_name" {
-  description = "IAM Role name for EKS-Nodes access"
-  type        = string
-}
-
-variable "AmazonSSMManagedInstanceCore_arn" {
-  description = "ARN of the policy to allow SSM access"
-  type        = string
 }
