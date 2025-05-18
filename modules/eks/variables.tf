@@ -28,11 +28,6 @@ variable "node_group_name" {
   type        = string
 }
 
-variable "node_role_arn" {
-  description = "IAM role ARN for node group"
-  type        = string
-}
-
 variable "instance_type" {
   description = "EC2 instance type for worker nodes"
   type        = string
