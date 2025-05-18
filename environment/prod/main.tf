@@ -12,6 +12,9 @@ module "eks" {
   desired_size        = var.desired_size
   min_size            = var.min_size
   max_size            = var.max_size
-  eks_nodes_ssm_role_name            = var.eks_nodes_ssm_role_name
-  AmazonS3FullAccess_arn            = var.AmazonS3FullAccess_arn
+  eks_nodes_ssm_role_name                           = var.eks_nodes_ssm_role_name
+  AmazonSSMManagedInstanceCore_arn                  = var.AmazonSSMManagedInstanceCore_arn
+  AmazonEKSWorkerNodePolicy_arn                     = var.AmazonEKSWorkerNodePolicy_arn
+  AmazonEKS_CNI_Policy_arn                          = var.AmazonEKS_CNI_Policy_arn
+  AmazonEC2ContainerRegistryReadOnly_arn            = var.AmazonEC2ContainerRegistryReadOnly_arn
 }
