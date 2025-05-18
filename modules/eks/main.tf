@@ -27,6 +27,7 @@ resource "aws_eks_node_group" "this" {
   cluster_name    = aws_eks_cluster.this.name
   node_group_name = var.node_group_name
   subnet_ids      = var.subnet_ids
+  iam_instance_profile = var.instance_profile_name
 
   instance_types       = [var.instance_type]
   disk_size            = 100
