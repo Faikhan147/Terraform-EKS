@@ -14,4 +14,3 @@ AmazonSSMManagedInstanceCore_arn           = "arn:aws:iam::aws:policy/AmazonSSMM
 AmazonEKSWorkerNodePolicy_arn              = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
 AmazonEKS_CNI_Policy_arn                   = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
 AmazonEC2ContainerRegistryReadOnly_arn     = "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly"
-AWSLoadBalancerControllerIAMPolicy_arn     = "arn:aws:iam::<your-account-id>:policy/AWSLoadBalancerControllerIAMPolicy"  # only if created manually
