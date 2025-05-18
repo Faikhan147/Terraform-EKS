@@ -15,7 +15,7 @@ resource "aws_iam_role" "eks_nodes_ssm_role" {
   })
 }
 
-# Default policy AmazonSSMManagedInstanceCore Role attached to EKS-Nodes
+# Default policy AmazonSSMManagedInstanceCore Role attached to EKS-Nodes Role
 
 resource "aws_iam_role_policy_attachment" "attach_ssm_access" {
   role       = aws_iam_role.eks_nodes_ssm_role.name
