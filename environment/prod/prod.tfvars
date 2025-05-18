@@ -4,7 +4,6 @@ kms_key_arn         = "arn:aws:kms:ap-south-1:195275659054:key/cf1e36fb-e5c5-4d3
 subnet_ids          = ["subnet-0d122a84d3edb9ba1", "subnet-0473aa947a04c0fa3", "subnet-05e6fb6a379ad46b5"]
 security_group_ids  = ["sg-0123544b2570bf42b"]
 node_group_name     = "faisal-prod-nodes"
-node_role_arn       = "arn:aws:iam::195275659054:role/Node-Role"
 instance_type       = "t3.medium"
 desired_size        = 2
 min_size            = 2
