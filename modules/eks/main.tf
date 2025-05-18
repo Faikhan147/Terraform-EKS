@@ -39,7 +39,6 @@ resource "aws_eks_node_group" "this" {
   disk_size      = 100
 
   remote_access {
-    ec2_ssh_key               = var.ec2_key_pair
     source_security_group_ids = var.security_group_ids
   }
 
