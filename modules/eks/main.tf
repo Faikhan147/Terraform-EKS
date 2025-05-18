@@ -30,7 +30,7 @@ resource "aws_eks_node_group" "this" {
 
   instance_types       = [var.instance_type]
   disk_size            = 100
-  iam_instance_profile = aws_iam_instance_profile.eks_nodes_ssm_profile.name
+  iam_instance_profile = var.instance_profile_name
 
   scaling_config {
     desired_size = var.desired_size
