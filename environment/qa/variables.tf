@@ -1,4 +1,3 @@
-
 variable "cluster_name" {}
 variable "eks_cluster_role_name" {}
 variable "AmazonEKSClusterPolicy_arn" {}
