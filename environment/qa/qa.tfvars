@@ -1,4 +1,3 @@
-
 cluster_name        = "faisal-qa-cluster"
 eks_cluster_role_name  = "eks-qa-cluster-role"
 AmazonEKSClusterPolicy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
