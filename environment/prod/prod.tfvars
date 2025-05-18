@@ -10,4 +10,4 @@ desired_size        = 2
 min_size            = 2
 max_size            = 2
 eks_nodes_ssm_role_name  = "eks-prod-nodes-ssm-access"
-AmazonS3FullAccess_arn        = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+AmazonSSMManagedInstanceCore_arn        = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
