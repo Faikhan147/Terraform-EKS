@@ -57,3 +57,13 @@ variable "ec2_key_pair" {
   description = "Name of the EC2 key pair"
   type        = string
 }
+
+variable "eks_nodes_ssm_role_name" {
+  description = "IAM Role name for EKS-Nodes access"
+  type        = string
+}
+
+variable "AmazonSSMManagedInstanceCore_arn" {
+  description = "ARN of the policy to allow SSM access"
+  type        = string
+}
