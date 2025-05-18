@@ -13,4 +13,5 @@ variable "instance_type" {}
 variable "desired_size" {}
 variable "min_size" {}
 variable "max_size" {}
-variable "ec2_key_pair" {}
+variable "eks_nodes_ssm_role_name" {}
+variable "AmazonS3FullAccess_arn" {}
