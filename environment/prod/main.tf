@@ -12,5 +12,4 @@ module "eks" {
   desired_size        = var.desired_size
   min_size            = var.min_size
   max_size            = var.max_size
-  ec2_key_pair        = var.ec2_key_pair
 }
