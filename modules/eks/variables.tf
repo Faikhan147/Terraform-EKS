@@ -23,6 +23,11 @@ variable "CloudWatchAgentServerPolicy_arn" {
   type        = string
 }
 
+variable "cluster_role_arn" {
+  description = "IAM Role ARN for EKS cluster"
+  type        = string
+}
+
 variable "kms_key_arn" {
   description = "KMS Key ARN for secrets encryption"
   type        = string
