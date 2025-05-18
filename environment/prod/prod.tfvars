@@ -1,5 +1,5 @@
 cluster_name        = "faisal-prod-cluster"
-eks_cluster_role_name  = "eks-prod-cluster"
+eks_cluster_role_name  = "eks-prod-cluster-role"
 AmazonEKSClusterPolicy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
 AmazonEKSServicePolicy_arn = "arn:aws:iam::aws:policy/AmazonEKSServicePolicy"
 CloudWatchAgentServerPolicy_arn = "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
@@ -12,7 +12,7 @@ instance_type       = "t3.medium"
 desired_size        = 2
 min_size            = 2
 max_size            = 2
-eks_nodes_ssm_role_name  = "eks-prod-nodes-ssm-access"
+eks_nodes_ssm_role_name  = "eks-prod-nodes-ssm-access-role"
 AmazonSSMManagedInstanceCore_arn           = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
 AmazonEKSWorkerNodePolicy_arn              = "arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy"
 AmazonEKS_CNI_Policy_arn                   = "arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy"
