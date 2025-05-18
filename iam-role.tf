@@ -22,6 +22,27 @@ resource "aws_iam_role_policy_attachment" "attach_ssm_access" {
   policy_arn = var.AmazonSSMManagedInstanceCore_arn
 }
 
+# Default policy AmazonEKSWorkerNodePolicy attached to EKS-Nodes Role
+
+resource "aws_iam_role_policy_attachment" "attach_workernode_access" {
+  role       = aws_iam_role.eks_nodes_ssm_role.name
+  policy_arn = var.AmazonEKSWorkerNodePolicy_arn
+}
+
+# Default policy AmazonEKS_CNI_Policy attached to EKS-Nodes Role
+
+resource "aws_iam_role_policy_attachment" "attach_cni_access" {
+  role       = aws_iam_role.eks_nodes_ssm_role.name
+  policy_arn = var.AmazonEKS_CNI_Policy_arn
+}
+
+# Default policy AmazonEC2ContainerRegistryReadOnly attached to EKS-Nodes Role
+
+resource "aws_iam_role_policy_attachment" "attach_container_access" {
+  role       = aws_iam_role.eks_nodes_ssm_role.name
+  policy_arn = var.AmazonEC2ContainerRegistryReadOnly_arn
+}
+
 # Instance profile creation for EKS-Nodes Role attach to EKS-Nodes EC2
 
 resource "aws_iam_instance_profile" "eks_nodes_ssm_profile" {
