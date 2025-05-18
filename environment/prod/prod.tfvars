@@ -9,5 +9,5 @@ instance_type       = "t3.medium"
 desired_size        = 2
 min_size            = 2
 max_size            = 2
-eks_nodes_ssm_role_name  = "eks-nodes-ssm-access"
+eks_nodes_ssm_role_name  = "eks-prod-nodes-ssm-access"
 AmazonS3FullAccess_arn        = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
