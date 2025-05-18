@@ -10,7 +10,6 @@ variable "AmazonEKS_CNI_Policy_arn" {}
 variable "AmazonEC2ContainerRegistryReadOnly_arn" {}
 
 variable "cluster_name" {}
-variable "cluster_role_arn" {}
 variable "kms_key_arn" {}
 variable "subnet_ids" {
   type = list(string)
