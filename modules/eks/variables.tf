@@ -47,3 +47,9 @@ variable "cluster_role_arn" {
   description = "IAM role ARN for EKS cluster"
   type        = string
 }
+
+variable "instance_profile_name" {
+  description = "Instance profile for worker nodes"
+  type        = string
+}
+
