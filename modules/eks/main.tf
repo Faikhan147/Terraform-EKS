@@ -28,6 +28,7 @@ resource "aws_eks_node_group" "this" {
   node_group_name = var.node_group_name
   node_role_arn   = var.node_role_arn
   subnet_ids      = var.subnet_ids
+  iam_instance_profile = aws_iam_instance_profile.eks_nodes_ssm_profile.name
 
   scaling_config {
     desired_size = var.desired_size
