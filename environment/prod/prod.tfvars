@@ -11,7 +11,7 @@ AmazonEC2ContainerRegistryReadOnly_arn = "arn:aws:iam::aws:policy/AmazonEC2Conta
 
 cluster_name        = "prod-eks-cluster"
 kms_key_arn         = "arn:aws:kms:ap-south-1:195275659054:key/cf1e36fb-e5c5-4d3d-bfd9-4eda4041cb55"
-subnet_ids          = ["subnet-0d122a84d3edb9ba1"]
+subnet_ids          = ["subnet-0d122a84d3edb9ba1", 	"subnet-05e6fb6a379ad46b5"]
 security_group_ids  = ["sg-00ee3067d865879f6"]
 node_group_name     = "prod-node-group"
 instance_type       = "t3.medium"
