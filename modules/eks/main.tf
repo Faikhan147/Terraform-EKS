@@ -42,5 +42,15 @@ resource "aws_eks_node_group" "this" {
     Name = "${var.cluster_name}-node-group"
   }
 
+
+  labels = {
+    environment = "prod"
+  }
+
+  # Important: This tag applies to EC2 instances created in the node group
+  node_group_tags = {
+    Name = "${var.cluster_name}-node-instance"
+  }
+
   depends_on = [aws_eks_cluster.this]
 }
