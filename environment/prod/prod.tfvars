@@ -16,6 +16,7 @@ security_group_ids  = ["sg-00ee3067d865879f6"]
 node_group_name     = "prod-node-group"
 instance_type       = "t3.medium"
 ami_id              = "ami-0e35ddab05955cf57"
+env                 = "Prod"
 desired_size        = 3
 min_size            = 3
 max_size            = 3
