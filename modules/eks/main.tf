@@ -38,18 +38,19 @@ resource "aws_eks_node_group" "this" {
     max_size     = var.max_size
   }
 
-  tags = {
-    Name = "${var.cluster_name}-node-group"
-  }
-
-
   labels = {
     environment = "prod"
   }
 
-  # Important: This tag applies to EC2 instances created in the node group
-  node_group_tags = {
-    Name = "${var.cluster_name}-node-instance"
+  tags = {
+    # Node Group resource ke liye
+    Name = "${var.cluster_name}-node-group"
+    environment = "prod"
+    # Ye tag EKS ko batata hai ki ye cluster ka hissa hai
+    "kubernetes.io/cluster/${var.cluster_name}" = "owned"
+    
+    # Extra custom tag (lekin EC2 instance pe nahi lagega)
+    NodeInstanceName = "${var.cluster_name}-node-instance"
   }
 
   depends_on = [aws_eks_cluster.this]
