@@ -34,7 +34,7 @@ resource "aws_launch_template" "eks_node_lt" {
     tags = {
       Name = "${var.cluster_name}-node"
       "kubernetes.io/cluster/${var.cluster_name}" = "owned"
-      environment = "prod"
+      environment = var.env
     }
   }
 
@@ -61,11 +61,11 @@ resource "aws_eks_node_group" "this" {
   }
 
   labels = {
-    environment = "prod"
+    environment = var.env
   }
 
   tags = {
-    environment = "prod"
+    environment = var.env
     "kubernetes.io/cluster/${var.cluster_name}" = "owned"
   }
 
