@@ -19,6 +19,7 @@ variable "security_group_ids" {
 }
 variable "node_group_name" {}
 variable "instance_type" {}
+variable "ami_id" {}
 variable "desired_size" {}
 variable "min_size" {}
 variable "max_size" {}
