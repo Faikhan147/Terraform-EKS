@@ -26,6 +26,7 @@ module "eks" {
   security_group_ids  = var.security_group_ids
   node_group_name     = var.node_group_name
   instance_type       = var.instance_type
+  ami_id              = var.ami_id
   desired_size        = var.desired_size
   min_size            = var.min_size
   max_size            = var.max_size
