@@ -16,6 +16,7 @@ security_group_ids  = ["sg-01320907e0576d048"]
 node_group_name     = "staging-node-group"
 instance_type       = "t3.medium"
 ami_id              = "ami-0e35ddab05955cf57"
+env                 = "Staging"
 desired_size        = 3
 min_size            = 3
 max_size            = 3
