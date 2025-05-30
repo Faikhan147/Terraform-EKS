@@ -27,6 +27,7 @@ module "eks" {
   node_group_name     = var.node_group_name
   instance_type       = var.instance_type
   ami_id              = var.ami_id
+  env                 = var.env
   desired_size        = var.desired_size
   min_size            = var.min_size
   max_size            = var.max_size
