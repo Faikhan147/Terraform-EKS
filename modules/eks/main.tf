@@ -32,7 +32,7 @@ resource "aws_launch_template" "eks_node_lt" {
     resource_type = "instance"
 
     tags = {
-      Name = "prod-node-${count.index + 1}"
+      Name = "${var.cluster_name}-node"
       "kubernetes.io/cluster/${var.cluster_name}" = "owned"
       environment = "prod"
     }
