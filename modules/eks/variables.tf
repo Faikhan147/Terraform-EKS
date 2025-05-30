@@ -33,6 +33,11 @@ variable "ami_id" {
   type        = string
 }
 
+variable "env" {
+  description = "Environment for worker nodes"
+  type        = string
+}
+
 variable "desired_size" {
   description = "Desired node group size"
   type        = number
