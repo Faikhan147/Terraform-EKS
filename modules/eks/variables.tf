@@ -28,6 +28,11 @@ variable "instance_type" {
   type        = string
 }
 
+variable "ami_id" {
+  description = "AMI ID for worker nodes"
+  type        = string
+}
+
 variable "desired_size" {
   description = "Desired node group size"
   type        = number
