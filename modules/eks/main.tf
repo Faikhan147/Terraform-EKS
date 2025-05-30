@@ -23,14 +23,36 @@ resource "aws_eks_cluster" "this" {
   }
 }
 
+resource "aws_launch_template" "eks_node_lt" {
+  name_prefix   = "${var.cluster_name}-lt-"
+  image_id      = var.ami_id
+  instance_type = var.instance_type
+
+  tag_specifications {
+    resource_type = "instance"
+
+    tags = {
+      Name = "prod-node-${count.index + 1}"
+      "kubernetes.io/cluster/${var.cluster_name}" = "owned"
+      environment = "prod"
+    }
+  }
+
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
 resource "aws_eks_node_group" "this" {
   cluster_name    = aws_eks_cluster.this.name
   node_group_name = var.node_group_name
   subnet_ids      = var.subnet_ids
-  node_role_arn        = var.node_role_arn
+  node_role_arn   = var.node_role_arn
 
-  instance_types       = [var.instance_type]
-  disk_size            = 100
+  launch_template {
+    id      = aws_launch_template.eks_node_lt.id
+    version = "$Latest"
+  }
 
   scaling_config {
     desired_size = var.desired_size
@@ -43,14 +65,8 @@ resource "aws_eks_node_group" "this" {
   }
 
   tags = {
-    # Node Group resource ke liye
-    Name = "${var.cluster_name}-node-group"
     environment = "prod"
-    # Ye tag EKS ko batata hai ki ye cluster ka hissa hai
     "kubernetes.io/cluster/${var.cluster_name}" = "owned"
-    
-    # Extra custom tag (lekin EC2 instance pe nahi lagega)
-    NodeInstanceName = "${var.cluster_name}-node-instance"
   }
 
   depends_on = [aws_eks_cluster.this]
