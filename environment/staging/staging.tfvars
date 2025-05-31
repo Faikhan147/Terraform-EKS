@@ -15,7 +15,8 @@ subnet_ids          = ["subnet-05e6fb6a379ad46b5", "subnet-0473aa947a04c0fa3"]
 security_group_ids  = ["sg-01320907e0576d048"]
 node_group_name     = "staging-node-group"
 instance_type       = "t3.medium"
-ami_id              = "ami-0af9569868786b23a"
+ami_id              = "ami-0eb04f1ac6539e319"
+user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHFhLWVrcy1jbHVzdGVyIC0ta3VibGV0LWV4dHJhLWFyZ3MgIi0tbm9kZS1sYWJlbHM9ZWtzLmFtYXpvbmF3cy5jb20vbm9kZWdyb3VwPXN0YWdpbmctbm9kZS1ncm91cA=="
 env                 = "Staging"
 desired_size        = 3
 min_size            = 3
