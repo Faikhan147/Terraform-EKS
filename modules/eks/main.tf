@@ -28,6 +28,9 @@ resource "aws_launch_template" "eks_node_lt" {
   image_id      = var.ami_id
   instance_type = var.instance_type
 
+  # User data variable ko yahan pass karo (base64 encoded string expected)
+  user_data = var.user_data
+
   tag_specifications {
     resource_type = "instance"
 
