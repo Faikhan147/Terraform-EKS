@@ -20,6 +20,7 @@ variable "security_group_ids" {
 variable "node_group_name" {}
 variable "instance_type" {}
 variable "ami_id" {}
+variable "user_data" {}
 variable "env" {}
 variable "desired_size" {}
 variable "min_size" {}
