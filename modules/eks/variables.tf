@@ -33,6 +33,11 @@ variable "ami_id" {
   type        = string
 }
 
+variable "user_data" {
+  description = "User Data for template"
+  type        = string
+}
+
 variable "env" {
   description = "Environment for worker nodes"
   type        = string
