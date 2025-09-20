@@ -1,25 +1,19 @@
+# variables.tf (real-time companies style)
+
+# Environment
+variable "env" {
+  description = "Environment name"
+  type        = string
+}
+
+# Cluster & Node Group
 variable "cluster_name" {
-  description = "EKS cluster name"
+  description = "EKS Cluster name"
   type        = string
-}
-
-variable "kms_key_arn" {
-  description = "KMS Key ARN for secrets encryption"
-  type        = string
-}
-
-variable "subnet_ids" {
-  description = "List of subnet IDs for the cluster"
-  type        = list(string)
-}
-
-variable "security_group_ids" {
-  description = "List of security group IDs"
-  type        = list(string)
 }
 
 variable "node_group_name" {
-  description = "Name of the EKS node group"
+  description = "EKS Node Group name"
   type        = string
 }
 
@@ -28,47 +22,56 @@ variable "instance_type" {
   type        = string
 }
 
+variable "desired_size" {
+  description = "Desired number of nodes in node group"
+  type        = number
+}
+
+variable "min_size" {
+  description = "Minimum number of nodes in node group"
+  type        = number
+}
+
+variable "max_size" {
+  description = "Maximum number of nodes in node group"
+  type        = number
+}
+
+# AMI & User Data
 variable "ami_id" {
   description = "AMI ID for worker nodes"
   type        = string
 }
 
 variable "user_data" {
-  description = "User Data for template"
+  description = "Bootstrap script for worker nodes (base64 encoded)"
   type        = string
 }
 
-variable "env" {
-  description = "Environment for worker nodes"
+# KMS / Encryption
+variable "kms_key_arn" {
+  description = "KMS Key ARN for encryption"
   type        = string
 }
 
-variable "desired_size" {
-  description = "Desired node group size"
-  type        = number
+# Existing / Shared VPC Resources
+variable "subnet_ids" {
+  description = "List of existing subnet IDs for EKS nodes"
+  type        = list(string)
 }
 
-variable "min_size" {
-  description = "Minimum node group size"
-  type        = number
+variable "security_group_ids" {
+  description = "List of existing security group IDs for EKS nodes"
+  type        = list(string)
 }
 
-variable "max_size" {
-  description = "Maximum node group size"
-  type        = number
-}
-
-variable "cluster_role_arn" {
-  description = "IAM role ARN for EKS cluster"
+# IAM Role Names
+variable "eks_cluster_role_arn" {
+  description = "Existing IAM role name for EKS cluster"
   type        = string
 }
 
-variable "instance_profile_name" {
-  description = "Instance profile for worker nodes"
-  type        = string
-}
-
-variable "node_role_arn" {
-  description = "IAM Role ARN for EKS Node Group"
+variable "eks_nodes_ssm_role_arn" {
+  description = "Existing IAM role name for EKS worker nodes"
   type        = string
 }
