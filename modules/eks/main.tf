@@ -1,6 +1,11 @@
+# main.tf (real-time companies style)
+
+# EKS Cluster
 resource "aws_eks_cluster" "this" {
-  name     = var.cluster_name
-  role_arn = var.cluster_role_arn
+  name = var.cluster_name
+
+  # Directly using the name from variables (assume existing IAM role)
+  role_arn = var.eks_cluster_role_arn
 
   vpc_config {
     subnet_ids         = var.subnet_ids
@@ -23,12 +28,12 @@ resource "aws_eks_cluster" "this" {
   }
 }
 
+# Launch Template for Node Group
 resource "aws_launch_template" "eks_node_lt" {
   name_prefix   = "${var.cluster_name}-lt-"
   image_id      = var.ami_id
   instance_type = var.instance_type
-# User data variable ko yahan pass karo (base64 encoded string expected)
-  user_data = var.user_data
+  user_data     = var.user_data
 
   tag_specifications {
     resource_type = "instance"
@@ -45,11 +50,12 @@ resource "aws_launch_template" "eks_node_lt" {
   }
 }
 
+# EKS Node Group
 resource "aws_eks_node_group" "this" {
   cluster_name    = aws_eks_cluster.this.name
   node_group_name = var.node_group_name
   subnet_ids      = var.subnet_ids
-  node_role_arn   = var.node_role_arn
+  node_role_arn   = var.eks_nodes_ssm_role_arn  # existing IAM role name from var
 
   launch_template {
     id      = aws_launch_template.eks_node_lt.id
