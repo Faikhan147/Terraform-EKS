@@ -16,7 +16,7 @@ ami_id              = "ami-0eb04f1ac6539e319"
 user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHByb2QtZWtzLWNsdXN0ZXIgLS1rdWJlbGV0LWV4dHJhLWFyZ3MgIi0tbm9kZS1sYWJlbHM9ZWtzLmFtYXpvbmF3cy5jb20vbm9kZWdyb3VwPXByb2Qtbm9kZS1ncm91cCI="
 
 # KMS / Encryption
-kms_key_arn         = "arn:aws:kms:ap-south-1:923884399206:key/4e8228fa-b9b2-472a-8333-bdf6dec516c1"
+kms_key_arn         = "arn:aws:kms:ap-south-1:923884399206:key/c11a82e0-ac8f-4898-a306-b18ab7f044e0"
 
 # Existing / Shared VPC Resources
 subnet_ids          = ["subnet-0e025feb128873499", "subnet-0b7421ffc019f493b"]
