@@ -7,9 +7,9 @@ env                 = "QA"
 cluster_name        = "qa-eks-cluster"
 node_group_name     = "qa-node-group"
 instance_type       = "t3.medium"
-desired_size        = 3
-min_size            = 3
-max_size            = 3
+desired_size        = 2
+min_size            = 2
+max_size            = 2
 
 # AMI & User Data
 ami_id              = "ami-0eb04f1ac6539e319"
