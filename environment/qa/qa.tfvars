@@ -13,7 +13,7 @@ max_size            = 3
 
 # AMI & User Data
 ami_id              = "ami-0eb04f1ac6539e319"
-user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHFhLWVrcy1jbHVzdGVyIC0ta3ViZWx0LWV4dHJhLWFyZ3MgIi0tbm9kZS1sYWJlbHM9ZWtzLmFtYXpvbmF3cy5jb20vbm9kZWdyb3VwPXFhLW5vZGUtZ3JvdXA="
+user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHFhLWVrcy1jbHVzdGVyIC0ta3ViZWxldC1leHRyYS1hcmdzICItLW5vZGUtbGFiZWxzPWVrcy5hbWF6b25hd3MuY29tL25vZGVncm91cD1xYS1ub2RlLWdyb3VwIg=="
 
 # KMS / Encryption
 kms_key_arn         = "arn:aws:kms:ap-south-1:923884399206:key/89c3172d-fd22-4297-a69d-f8edb714787b"
