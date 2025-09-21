@@ -8,9 +8,9 @@ env                 = "Staging"
 cluster_name        = "staging-eks-cluster"
 node_group_name     = "staging-node-group"
 instance_type       = "t3.medium"
-desired_size        = 3
-min_size            = 3
-max_size            = 3
+desired_size        = 2
+min_size            = 2
+max_size            = 2
 
 # AMI & User Data
 ami_id              = "ami-0eb04f1ac6539e319"
