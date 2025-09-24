@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 echo "📦 Switching to staging environment directory..."
