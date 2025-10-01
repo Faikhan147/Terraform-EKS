@@ -34,6 +34,7 @@ module "eks" {
   eks_nodes_ssm_role_arn        = var.eks_nodes_ssm_role_arn   # pass ARN
 
   # Networking
+  vpc_id             = var.vpc_id             # added VPC association
   subnet_ids         = var.subnet_ids
   security_group_ids = var.security_group_ids
 
