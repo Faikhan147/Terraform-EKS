@@ -3,6 +3,9 @@
 # Environment
 env                 = "Prod"
 
+#Region
+region = "us-east-1"
+
 # Cluster & Node Group
 cluster_name        = "prod-eks-cluster"
 node_group_name     = "prod-node-group"
