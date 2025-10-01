@@ -3,9 +3,6 @@
 echo "📦 Switching to prod environment directory..."
 cd environment/prod
 
-echo "📦 Switching to prod workspace..."
-terraform workspace select prod || terraform workspace new prod
-
 echo "🔍 Initializing Terraform..."
 terraform init -reconfigure
 
