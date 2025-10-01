@@ -1,10 +1,13 @@
 # prod.tfvars (real-time companies style, logical order)
 
-# Environment
-env                 = "Prod"
+# VPC
+vpc_id = "vpc-00583c6394aac61af"
 
 # Region
 region = "us-east-1"
+
+# Environment
+env                 = "Prod"
 
 # Cluster & Node Group
 cluster_name        = "prod-eks-cluster"
