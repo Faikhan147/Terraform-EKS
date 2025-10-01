@@ -15,7 +15,7 @@ min_size            = 2
 max_size            = 2
 
 # AMI & User Data
-ami_id              = "ami-0eb04f1ac6539e319"
+ami_id              = "ami-0c96ba1c00905ab84"
 user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHFhLWVrcy1jbHVzdGVyIC0ta3ViZWxldC1leHRyYS1hcmdzICItLW5vZGUtbGFiZWxzPWVrcy5hbWF6b25hd3MuY29tL25vZGVncm91cD1xYS1ub2RlLWdyb3VwIg=="
 
 # KMS / Encryption
