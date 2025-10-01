@@ -3,6 +3,9 @@
 # Environment
 env                 = "QA"
 
+#Region
+region = "us-east-1"
+
 # Cluster & Node Group
 cluster_name        = "qa-eks-cluster"
 node_group_name     = "qa-node-group"
