@@ -1,10 +1,13 @@
 # qa.tfvars (real-time companies style, logical order)
 
-# Environment
-env                 = "QA"
+# VPC
+vpc_id = "vpc-00583c6394aac61af"
 
 # Region
 region = "us-east-1"
+
+# Environment
+env                 = "QA"
 
 # Cluster & Node Group
 cluster_name        = "qa-eks-cluster"
