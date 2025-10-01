@@ -1,11 +1,14 @@
 
 # prod.tfvars (real-time companies style, logical order)
 
-# Environment
-env                 = "Staging"
+# VPC
+vpc_id = "vpc-00583c6394aac61af"
 
 # Region
 region = "us-east-1"
+
+# Environment
+env                 = "Staging"
 
 # Cluster & Node Group
 cluster_name        = "staging-eks-cluster"
