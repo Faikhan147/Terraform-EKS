@@ -3,9 +3,6 @@
 echo "📦 Switching to staging environment directory..."
 cd environment/staging
 
-echo "📦 Switching to staging workspace..."
-terraform workspace select staging
-
 echo "🛠️ Initializing Terraform..."
 terraform init -reconfigure
 
