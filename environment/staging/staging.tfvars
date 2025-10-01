@@ -4,6 +4,9 @@
 # Environment
 env                 = "Staging"
 
+# Region
+region = "us-east-1"
+
 # Cluster & Node Group
 cluster_name        = "staging-eks-cluster"
 node_group_name     = "staging-node-group"
