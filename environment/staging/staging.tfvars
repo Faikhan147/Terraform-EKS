@@ -1,5 +1,4 @@
-
-# prod.tfvars (real-time companies style, logical order)
+# staging.tfvars (real-time companies style, logical order)
 
 # VPC
 vpc_id = "vpc-00583c6394aac61af"
