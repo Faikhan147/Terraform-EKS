@@ -1,8 +1,9 @@
 # variables.tf (real-time companies style)
 
 
-variable "env" {}
+variable "vpc_id" {}
 variable "region" {}
+variable "env" {}
 variable "cluster_name" {}
 variable "node_group_name" {}
 variable "instance_type" {}
