@@ -3,9 +3,6 @@
 echo "📦 Switching to qa environment directory..."
 cd environment/qa
 
-echo "📦 Switching to qa workspace..."
-terraform workspace select qa
-
 echo "🛠️ Initializing Terraform..."
 terraform init -reconfigure
 
