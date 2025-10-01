@@ -3,7 +3,7 @@
 # Environment
 env                 = "Prod"
 
-#Region
+# Region
 region = "us-east-1"
 
 # Cluster & Node Group
