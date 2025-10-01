@@ -22,7 +22,7 @@ user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHByb2QtZWtzL
 kms_key_arn         = "arn:aws:kms:us-east-1:584868042761:key/320d3796-08a9-4055-9f72-e1da580233f6"
 
 # Existing / Shared VPC Resources
-subnet_ids          = ["subnet-04945afc9fba6d530", "subnet-0f1267acaae7d5632", "subnet-04726b35bf527f8e6"]
+subnet_ids          = ["subnet-0f1267acaae7d5632", "subnet-04945afc9fba6d530", "subnet-04726b35bf527f8e6"]
 security_group_ids  = ["sg-01ce87bc6c157b893"]
 
 # IAM Role Names
