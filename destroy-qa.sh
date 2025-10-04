@@ -6,6 +6,9 @@ cd environment/qa
 echo "🛠️ Initializing Terraform..."
 terraform init -reconfigure
 
+echo "✅ Validating configuration..."
+terraform validate
+
 echo "📝 Formatting Terraform files..."
 terraform fmt -recursive
 
