@@ -11,6 +11,10 @@ variable "min_size" {}
 variable "max_size" {}
 variable "ami_id" {}
 variable "user_data" {}
+variable "root_volume_size" {}
+variable "root_volume_type" {}
+variable "root_volume_iops" {}
+variable "root_volume_throughput" {}
 variable "kms_key_arn" {}
 variable "subnet_ids" {
   type = list(string)
