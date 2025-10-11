@@ -60,12 +60,12 @@ variable "root_volume_type" {
 }
 
 variable "root_volume_iops" {
-  description = "Root EBS volume size in GB"
+  description = "Root EBS volume iops"
   type        = number
 }
 
 variable "root_volume_throughput" {
-  description = "Root EBS volume size in GB"
+  description = "Root EBS volume throughput"
   type        = number
 }
 
