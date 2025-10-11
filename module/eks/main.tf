@@ -38,8 +38,8 @@ resource "aws_launch_template" "eks_node_lt" {
   block_device_mappings {
     device_name = "/dev/xvda"
     ebs {
-      volume_size           = var.volume_size
-      volume_type           = var.volume_type
+      volume_size           = var.root_volume_size
+      volume_type           = var.root_volume_type
       delete_on_termination = true   # ✅ recommended
       encrypted             = true
       iops                  = var.root_volume_iops
