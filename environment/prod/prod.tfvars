@@ -9,7 +9,7 @@ env                 = "Prod"
 # Cluster & Node Group
 cluster_name        = "prod-eks-cluster"
 node_group_name     = "prod-node-group"
-instance_type       = "m7i-flex.large"
+instance_type       = "t3.micro"
 desired_size        = 2
 min_size            = 2
 max_size            = 10
@@ -17,6 +17,12 @@ max_size            = 10
 # AMI & User Data
 ami_id              = "ami-0f1aa3b4190b5d620"
 user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHByb2QtZWtzLWNsdXN0ZXIgLS1rdWJlbGV0LWV4dHJhLWFyZ3MgIi0tbm9kZS1sYWJlbHM9ZWtzLmFtYXpvbmF3cy5jb20vbm9kZWdyb3VwPXByb2Qtbm9kZS1ncm91cCI="
+
+# Root Volume
+root_volume_size    = 150
+root_volume_type    = "gp3"
+root_volume_iops    = 3000
+root_volume_throughput = 1250
 
 # KMS / Encryption
 kms_key_arn         = "arn:aws:kms:us-east-1:992862946505:key/78ecb810-5e8e-474b-b704-ed5cf8092587"
