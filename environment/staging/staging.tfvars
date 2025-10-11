@@ -9,20 +9,20 @@ env                 = "Staging"
 # Cluster & Node Group
 cluster_name        = "staging-eks-cluster"
 node_group_name     = "staging-node-group"
-instance_type       = "t3.medium"
-desired_size        = 1
-min_size            = 1
-max_size            = 1
+instance_type       = "m7i-flex.large"
+desired_size        = 2
+min_size            = 2
+max_size            = 10
 
 # AMI & User Data
-ami_id              = "ami-0c96ba1c00905ab84"
+ami_id              = "ami-0f1aa3b4190b5d620"
 user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHN0YWdpbmctZWtzLWNsdXN0ZXIgLS1rdWJlbGV0LWV4dHJhLWFyZ3MgIi0tbm9kZS1sYWJlbHM9ZWtzLmFtYXpvbmF3cy5jb20vbm9kZWdyb3VwPXN0YWdpbmctbm9kZS1ncm91cCI="
 
 # KMS / Encryption
 kms_key_arn         = "arn:aws:kms:us-east-1:584868042761:key/4775122e-9bb9-403d-8da8-a7f8c3222fab"
 
 # Existing / Shared VPC Resources
-subnet_ids          = ["subnet-075e3cdd5651d0229", "subnet-0a48a7edaffea35c2", "subnet-0ce797c344f2ac240"]
+subnet_ids          = ["subnet-037b70b8fd0e446fd", "subnet-031153a4e8b56670d", "subnet-031dbb7fe17a622dd"]
 security_group_ids  = ["sg-020363c220e76aedf"]
 
 # IAM Role Names
