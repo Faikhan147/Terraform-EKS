@@ -31,10 +31,10 @@ module "eks" {
   min_size              = var.min_size
   max_size              = var.max_size
   user_data             = var.user_data
-  volume_size           = var.root_volume_size
-  volume_type           = var.root_volume_type
-  iops                  = var.root_volume_iops
-  throughput            = var.root_volume_throughput
+  root_volume_size       = var.root_volume_size
+  root_volume_type       = var.root_volume_type
+  root_volume_iops       = var.root_volume_iops
+  root_volume_throughput = var.root_volume_throughput
   eks_nodes_ssm_role_arn        = var.eks_nodes_ssm_role_arn   # pass ARN
 
   # Networking
