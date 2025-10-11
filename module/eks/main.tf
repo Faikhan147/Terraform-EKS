@@ -40,10 +40,10 @@ resource "aws_launch_template" "eks_node_lt" {
     ebs {
       volume_size           = var.root_volume_size
       volume_type           = var.root_volume_type
-      delete_on_termination = true   # ✅ recommended
-      encrypted             = true
       iops                  = var.root_volume_iops
       throughput            = var.root_volume_throughput
+      delete_on_termination = true   # ✅ recommended
+      encrypted             = true
     }
   }
 
