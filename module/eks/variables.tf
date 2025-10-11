@@ -48,6 +48,27 @@ variable "user_data" {
   type        = string
 }
 
+# Root Volume
+variable "root_volume_size" {
+  description = "Root EBS volume size in GB"
+  type        = number
+}
+
+variable "root_volume_type" {
+  description = "Root EBS volume type (e.g., gp3, gp2, io1)"
+  type        = string
+}
+
+variable "root_volume_iops" {
+  description = "Root EBS volume size in GB"
+  type        = number
+}
+
+variable "root_volume_throughput" {
+  description = "Root EBS volume size in GB"
+  type        = number
+}
+
 # KMS / Encryption
 variable "kms_key_arn" {
   description = "KMS Key ARN for encryption"
