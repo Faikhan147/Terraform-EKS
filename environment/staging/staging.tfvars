@@ -9,7 +9,7 @@ env                 = "Staging"
 # Cluster & Node Group
 cluster_name        = "staging-eks-cluster"
 node_group_name     = "staging-node-group"
-instance_type       = "m7i-flex.large"
+instance_type       = "t3.micro"
 desired_size        = 2
 min_size            = 2
 max_size            = 10
