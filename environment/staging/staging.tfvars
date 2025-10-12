@@ -1,7 +1,7 @@
 # staging.tfvars (real-time companies style, logical order)
 
 # Region
-region = "us-east-1"
+region = "ap-southeast-2"
 
 # Environment
 env                 = "Staging"
@@ -9,7 +9,7 @@ env                 = "Staging"
 # Cluster & Node Group
 cluster_name        = "staging-eks-cluster"
 node_group_name     = "staging-node-group"
-instance_type       = "t3.micro"
+instance_type       = "m7i-flex.large"
 desired_size        = 2
 min_size            = 2
 max_size            = 10
