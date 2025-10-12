@@ -1,7 +1,7 @@
 # prod.tfvars (real-time companies style, logical order)
 
 # Region
-region = "us-east-1"
+region = "ap-southeast-2"
 
 # Environment
 env                 = "Prod"
@@ -9,7 +9,7 @@ env                 = "Prod"
 # Cluster & Node Group
 cluster_name        = "prod-eks-cluster"
 node_group_name     = "prod-node-group"
-instance_type       = "t3.micro"
+instance_type       = "m7i-flex.large"
 desired_size        = 2
 min_size            = 2
 max_size            = 10
