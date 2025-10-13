@@ -9,7 +9,7 @@ env                 = "QA"
 # Cluster & Node Group
 cluster_name        = "qa-eks-cluster"
 node_group_name     = "qa-node-group"
-instance_type       = "m7i-flex.large"
+instance_type       = "t3.medium"
 desired_size        = 2
 min_size            = 2
 max_size            = 10
