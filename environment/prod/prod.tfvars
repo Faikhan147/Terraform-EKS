@@ -22,7 +22,7 @@ user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHByb2QtZWtzL
 root_volume_size    = 150
 root_volume_type    = "gp3"
 root_volume_iops    = 3000
-root_volume_throughput = 1000
+root_volume_throughput = 750
 
 # KMS / Encryption
 kms_key_arn         = "arn:aws:kms:ap-southeast-2:584868042761:key/db0f511e-064c-49fe-a45d-ffb0e4732609"
