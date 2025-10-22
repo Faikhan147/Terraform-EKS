@@ -19,9 +19,9 @@ ami_id              = "ami-02b6238143f466bd1"
 user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHByb2QtZWtzLWNsdXN0ZXIgLS1rdWJlbGV0LWV4dHJhLWFyZ3MgIi0tbm9kZS1sYWJlbHM9ZWtzLmFtYXpvbmF3cy5jb20vbm9kZWdyb3VwPXByb2Qtbm9kZS1ncm91cCI="
 
 # Root Volume
-root_volume_size    = 150
+root_volume_size    = 200
 root_volume_type    = "gp3"
-root_volume_iops    = 3000
+root_volume_iops    = 6000
 root_volume_throughput = 750
 
 # KMS / Encryption
