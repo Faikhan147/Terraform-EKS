@@ -10,8 +10,8 @@ env                 = "Prod"
 cluster_name        = "prod-eks-cluster"
 node_group_name     = "prod-node-group"
 instance_type       = "t3.medium"
-desired_size        = 1
-min_size            = 1
+desired_size        = 2
+min_size            = 2
 max_size            = 10
 
 # AMI & User Data
