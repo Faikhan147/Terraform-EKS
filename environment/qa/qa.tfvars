@@ -21,7 +21,7 @@ user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHFhLWVrcy1jb
 # Root Volume
 root_volume_size    = 50
 root_volume_type    = "gp3"
-root_volume_iops    = 300
+root_volume_iops    = 3000
 root_volume_throughput = 125
 
 # KMS / Encryption
