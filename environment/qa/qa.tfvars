@@ -19,7 +19,7 @@ ami_id              = "ami-02b6238143f466bd1"
 user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHFhLWVrcy1jbHVzdGVyIC0ta3ViZWxldC1leHRyYS1hcmdzICItLW5vZGUtbGFiZWxzPWVrcy5hbWF6b25hd3MuY29tL25vZGVncm91cD1xYS1ub2RlLWdyb3VwIg=="
 
 # Root Volume
-root_volume_size    = 50
+root_volume_size    = 60
 root_volume_type    = "gp3"
 root_volume_iops    = 3000
 root_volume_throughput = 125
