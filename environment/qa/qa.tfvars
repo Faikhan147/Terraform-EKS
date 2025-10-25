@@ -25,11 +25,11 @@ root_volume_iops    = 3000
 root_volume_throughput = 125
 
 # KMS / Encryption
-kms_key_arn         = "arn:aws:kms:ap-southeast-2:585008052573:key/c1176a67-5816-4485-ab64-089d1280defc"
+kms_key_arn         = "arn:aws:kms:ap-southeast-1:585008052573:key/a254b5f9-6108-4dcc-93b1-99701a2339b5"
 
 # Existing / Shared VPC Resources
 subnet_ids          = ["subnet-0c88a16de66d9ff8e", "subnet-053ed326cad362f8d", "subnet-060151d7ee2b32795"]
-security_group_ids  = ["sg-0f4701d9235ed52ec"]
+security_group_ids  = ["sg-0d4aff5c1a1d8e490"]
 
 # IAM Role Names
 eks_cluster_role_arn = "arn:aws:iam::585008052573:role/qa-eks-cluster-role"
