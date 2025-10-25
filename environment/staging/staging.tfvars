@@ -1,7 +1,7 @@
 # staging.tfvars (real-time companies style, logical order)
 
 # Region
-region = "ap-southeast-2"
+region = "ap-southeast-1"
 
 # Environment
 env                 = "Staging"
