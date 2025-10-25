@@ -1,7 +1,7 @@
 # prod.tfvars (real-time companies style, logical order)
 
 # Region
-region = "ap-southeast-1"
+region = "ap-southeast-2"
 
 # Environment
 env                 = "Prod"
