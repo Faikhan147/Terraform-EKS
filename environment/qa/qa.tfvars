@@ -15,7 +15,7 @@ min_size            = 2
 max_size            = 10
 
 # AMI & User Data
-ami_id              = "ami-094d3844f0d6f6c63"
+ami_id              = "ami-017ab8758d48b8729"
 user_data           = "IyEvYmluL2Jhc2gKL2V0Yy9la3MvYm9vdHN0cmFwLnNoIHFhLWVrcy1jbHVzdGVyIC0ta3ViZWxldC1leHRyYS1hcmdzICItLW5vZGUtbGFiZWxzPWVrcy5hbWF6b25hd3MuY29tL25vZGVncm91cD1xYS1ub2RlLWdyb3VwIg=="
 
 # Root Volume
