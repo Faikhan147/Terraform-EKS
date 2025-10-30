@@ -29,7 +29,7 @@ kms_key_arn         = "arn:aws:kms:ap-southeast-2:585008052573:key/a38787a6-751b
 
 # Existing / Shared VPC Resources
 subnet_ids          = ["subnet-0fc672e91003fb2b2", "subnet-036d6d5772d7f053a", "subnet-08e2871786696388d"]
-security_group_ids  = ["sg-0400f514f9afa78f8"]
+security_group_ids  = ["sg-0e91d8417ee6c7a12"]
 
 # IAM Role Names
 eks_cluster_role_arn = "arn:aws:iam::585008052573:role/qa-eks-cluster-role"
