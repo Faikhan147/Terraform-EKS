@@ -28,7 +28,7 @@ root_volume_throughput = 750
 kms_key_arn         = "arn:aws:kms:ap-southeast-2:585008052573:key/d7885217-3be5-48d5-aa71-517e33f4c31b"
 
 # Existing / Shared VPC Resources
-subnet_ids          = ["subnet-091e7c82c0fa74974", "subnet-05f37dfe1a7c748ff", "subnet-09011fff2c69c1f9d"]
+subnet_ids          = ["subnet-0fc672e91003fb2b2", "subnet-036d6d5772d7f053a", "subnet-08e2871786696388d"]
 security_group_ids  = ["sg-00013685c766a6ffe"]
 
 # IAM Role Names
