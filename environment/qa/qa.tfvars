@@ -25,7 +25,7 @@ root_volume_iops    = 3000
 root_volume_throughput = 125
 
 # KMS / Encryption
-kms_key_arn         = "arn:aws:kms:ap-southeast-2:585008052573:key/fcafb4b6-0502-4303-b672-fa9129eeec94"
+kms_key_arn         = "arn:aws:kms:ap-southeast-2:585008052573:key/a38787a6-751b-45a9-91c1-fc0639a2f009"
 
 # Existing / Shared VPC Resources
 subnet_ids          = ["subnet-0fc672e91003fb2b2", "subnet-036d6d5772d7f053a", "subnet-08e2871786696388d"]
